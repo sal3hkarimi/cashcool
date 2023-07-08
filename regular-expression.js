@@ -23,6 +23,11 @@ if(regex.test(phoneNumber)) {
 } else {
     console.log("شماره تلفن معتبر نیست");
 }
+// OR
+var regex = new RegExp('^(\\+98|0)?9\\d{9}$');
+var result = regex.test('+989031234567');
+
+console.log(result);
 
 // -------------------------------------
 function isPersian(str) {
